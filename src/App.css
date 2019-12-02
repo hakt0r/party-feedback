@@ -20,3 +20,26 @@
 .App-link {
   color: #09d3ac;
 }
+
+label {
+  margin-bottom: 0 !important;
+}
+
+.disabled, .disabled * {
+  pointer-events: none;
+  opacity: 0.8;
+}
+.disabled img {
+  display: block !important;
+  animation: rotating 1s infinite;
+  transform-origin: center;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
